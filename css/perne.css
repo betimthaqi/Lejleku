@@ -1,0 +1,606 @@
+#header,
+#container,
+#footer,
+#copyright {
+    display: block;
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* body{margin:0; padding:0; font-size:12px; font-family:Georgia, "Times New Roman", Times, serif; color:#848C92; background-color:#FFFFFF;} */
+
+.clear:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+}
+
+.clear {
+    display: block;
+    clear: both;
+}
+
+.fl_left {
+    float: left;
+}
+
+.fl_right {
+    float: right;
+}
+
+
+/* ----------------------------------------------Wrapper------------------------------------- */
+
+div.wrapper {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+div.wrapper a {
+    color: #CB9430;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCxc4EsA.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+    font-family: 'Dubai Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Dubai Regular'), url('Dubai-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Dubai Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Dubai Light'), url('Dubai-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Dubai Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Dubai Medium'), url('Dubai-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Dubai Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Dubai Bold'), url('Dubai-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Beckman Free';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Beckman Free'), url('Beckman-Free.woff') format('woff');
+}
+
+
+/* reset */
+
+html,
+header,
+footer,
+body,
+article,
+section,
+fieldset,
+nav,
+p,
+img,
+figure,
+figcaption,
+h1,
+h2,
+h3,
+div,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    font-size: 100%;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* hyperlinqet*/
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+/* headeri */
+
+#header {
+    padding: 30px;
+    margin-bottom: 13px;
+}
+
+#header #hgroup {
+    display: block;
+    float: left;
+    width: auto;
+    clear: right;
+}
+
+#header #hgroup h1,
+#header #hgroup h2 {
+    margin: 0;
+    font-weight: normal;
+    text-transform: none;
+}
+
+#header #hgroup h2 {
+    color: black;
+    font-family: "Dubai";
+}
+
+#header #hgroup h1 a {
+    font-family: "Beckman";
+}
+
+#logo {
+    background-image: url('../images/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline;
+    padding: 50px;
+    vertical-align: middle;
+}
+
+#header #hgroup h1 {
+    font-size: 3.3em;
+    display: inline;
+}
+
+#header #hgroup h2 {
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+#header #header-contact {
+    display: block;
+    float: right;
+    width: auto;
+    clear: right;
+}
+
+#header #header-contact a {
+    color: #000000;
+}
+
+#header #header-contact ul {
+    margin-top: 40px;
+}
+
+#header #header-contact li {
+    color: #000000;
+    display: inline;
+    margin: 0px 0 0 30px;
+    padding: 0px 0 0 30px;
+    font-size: 0.9em;
+}
+
+
+/* Menyt kryesore */
+
+#topnav {
+    display: block;
+    width: 960px;
+}
+
+.row2 {
+    border-top: 1px solid #ECECEC;
+}
+
+#topnav {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    display: block;
+    clear: both;
+    margin-left: 17em;
+    font-size: 16.5px;
+}
+
+#topnav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    text-transform: uppercase;
+}
+
+#topnav ul li:first-child,
+#topnav ul li.first {
+    margin-left: 0;
+}
+
+#topnav ul li li {
+    margin: 0;
+    text-align: left;
+    font-style: normal;
+}
+
+#topnav ul li a:link,
+#topnav ul li a:visited,
+#topnav ul li a:hover {
+    display: block;
+    margin: 0;
+    padding: 0;
+    color: #666666;
+}
+
+#topnav ul li a:hover,
+#topnav ul li.active a {
+    color: #CB9530;
+}
+
+#topnav ul li ul li a:link,
+#topnav ul li ul li a:visited {
+    width: 150px;
+    float: none;
+    margin: 0;
+    padding: 7px 10px;
+    text-transform: none;
+    font-weight: normal;
+    color: #666666;
+    background-color: #F9F9F9;
+    border: none;
+}
+
+#topnav ul li ul li a:hover {
+    color: #CB9530;
+    border: none;
+}
+
+#topnav ul ul {
+    z-index: 9999;
+    position: absolute;
+    left: -999em;
+    height: auto;
+    width: 170px;
+    padding: 5px 0 0 0;
+    border-bottom: 1px solid #D5D5D5;
+}
+
+#topnav ul ul a {
+    width: 140px;
+}
+
+#topnav ul li:hover ul {
+    left: auto;
+}
+
+#topnav ul li:hover {
+    position: static;
+}
+
+
+
+/* Menyt kryesore */
+
+#topnav {
+    display: block;
+    width: 960px;
+}
+
+.row2 {
+    border-top: 1px solid #ECECEC;
+}
+
+#topnav {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    display: block;
+    clear: both;
+    margin-left: 17em;
+    font-size: 16.5px;
+}
+
+#topnav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    text-transform: uppercase;
+}
+
+#topnav ul li:first-child,
+#topnav ul li.first {
+    margin-left: 0;
+}
+
+#topnav ul li li {
+    margin: 0;
+    text-align: left;
+    font-style: normal;
+}
+
+#topnav ul li a:link,
+#topnav ul li a:visited,
+#topnav ul li a:hover {
+    display: block;
+    margin: 0;
+    padding: 0;
+    color: #666666;
+}
+
+#topnav ul li a:hover,
+#topnav ul li.active a {
+    color: #CB9530;
+}
+
+#topnav ul li ul li a:link,
+#topnav ul li ul li a:visited {
+    width: 150px;
+    float: none;
+    margin: 0;
+    padding: 7px 10px;
+    text-transform: none;
+    font-weight: normal;
+    color: #666666;
+    background-color: #F9F9F9;
+    border: none;
+}
+
+#topnav ul li ul li a:hover {
+    color: #CB9530;
+    border: none;
+}
+
+#topnav ul ul {
+    z-index: 9999;
+    position: absolute;
+    left: -999em;
+    height: auto;
+    width: 170px;
+    padding: 5px 0 0 0;
+    border-bottom: 1px solid #D5D5D5;
+}
+
+#topnav ul ul a {
+    width: 140px;
+}
+
+#topnav ul li:hover ul {
+    left: auto;
+}
+
+#topnav ul li:hover {
+    position: static;
+}
+
+  /* Vija nalt */
+.row9{
+    border-top:5px solid #CB9530;
+  }
+.row3{
+  padding-top:1em;
+  border-top:1px solid #D5D5D5;
+}
+
+/*PORTOFOLIO */
+/* Sesioni par */
+.chap{
+	color: red;
+	font-size: 30px;
+	margin-left: 150px;
+	margin-top: 50px;
+	display: block;
+	width: 250px;
+}
+
+.par{
+	width: 250px;
+	display:block;
+	margin-left: 150px;
+}
+
+.rrethne{
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.oo{
+	position:relative;
+	vertical-align: top;
+}
+
+.row9{border-top:5px solid #CB9530;}
+/* sesioni dyt kto si tabela */
+/* Three columns side by side */
+.column {
+  float: left;
+  width: 30%;
+  margin-top: 50px;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  margin-left: 6.5em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.containercard {
+  line-height: 1.5em;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #E10A18;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #CB9530;
+}
+
+form, fieldset, legend{
+    margin:0;
+    padding:0;
+    border:none;
+  }
+legend{
+      display:none;
+  }
+
+input, textarea, select{
+    font-size:12px;
+    font-family:Georgia,"Times New Roman",Times,serif;
+  }
+
+  /* ------------------------------------------------------------------------------------------------
+                      KODI I SHTUAR NGA UNE
+  ---------------------------------------------------------------------------------------------------*/
+.staff {
+  margin-bottom: 100px;
+  padding-bottom: 500px;
+}
+  /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea, input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px;
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+button {
+  background-color: #E10A18;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+a {
+  color: black;
+}
+button:hover {
+  background-color: #CB9530;
+  color: black;
+}
+
+.contactform {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px 150px;
+}
+
+#map iframe{
+height: 400px;
+width: 100%;
+}
+
+/* ----------------------------------------------Footeri------------------------------------ */
+.row4 {
+    border-top: 9.5px solid #1f1f1f;
+    border-bottom: 1px solid #D5D5D5
+}
+
+.one_quarter,
+.two_quarter {
+    display: block;
+    float: left;
+    margin: 0 0 0 20px;
+}
+
+.one_quarter {
+    width: 225px;
+}
+
+.two_quarter {
+    width: 470px;
+}
+
+#footer {
+    padding: 30px;
+    line-height: 1.5em;
+    color: #7e7e7e
+}
+
+#footer section h2.title {
+    margin-bottom: 30px;
+    font-size: 21px;
+    color: #1f1f1f;
+}
+
+#footer #dhenat p {
+    line-height: 1.2em;
+    font-size: 15px;
+}
+
+#footer nav ul {
+    list-style: none;
+}
+
+#footer section ul li {
+    margin: 30px 0 0;
+    padding: 0 5px 5px 0;
+    border-bottom: 1px solid #D5D5D5;
+    list-style-type: none;
+}
+
+#footer section ul li a {
+    margin-left: 1em;
+    font-size: 20px;
+}
+
+#footer section ul li img {
+    vertical-align: middle;
+}
+
+#footer #sponzoret {
+    height: 50px;
+    margin: 30px;
+    display: inline-block;
+}
+
+/* ----------------------------------------------Copyright------------------------------------- */
+
+#copyright {
+    padding: 20px 0;
+}
+
+#copyright,
+#copyright a {
+    color: #666666;
+}
+
+#copyright p {
+    margin: 0;
+    padding: 0;
+}
