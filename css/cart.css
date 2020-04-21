@@ -1,0 +1,9 @@
+#header-contact ul #cart_count {
+    border-radius: 100%;
+    font-size: 12px;
+    background: #CB9530;
+    color: #fff;
+    padding: 0 5px;
+    vertical-align: top;
+    font-size: 18px;
+}
