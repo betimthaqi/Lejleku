@@ -77,11 +77,7 @@ if (isset($_POST['remove'])) {
 <?php require_once("components/footeri.php")?>
 <div class="wrapper row5">
         <footer id="copyright" class="clear">
-<<<<<<< HEAD
             <p class="fl_left">Copyright &copy; 2020 - All Rights Reserved hahah- <a href="#">Grupi 7</a></p>
-=======
-            <p class="fl_left">Copyright &copy; 2020 - All Rights Reserved hahah - <a href="#">Grupi 7</a></p>
->>>>>>> 102e33d90dd8c6d4bd9333211b13ef5593fda998
             <p class="fl_right">Projekti ne <a target="_blank" href="https://github.com/durajetz/INT19_20_Gr7" title="">Github</a></p>
         </footer>
     </div>
