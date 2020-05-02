@@ -19,7 +19,11 @@
                         }
                         ?>
                     </a></li>
-                <li>Log</li>
+                <li><a href="login.php"><button class="kyq" style="	margin-top:10px;
+                	color: white;
+                	margin-bottom:15px;
+                  padding: 10px 25px;
+                  background-color: #CB9530;"> Kyçu </button></a></li>
             </ul>
         </div>
         <!-- menyt kryesore -->
@@ -29,15 +33,8 @@
             <ul class="clear">
                 <li class="first active"><a href="index.php">Homepage</a></li>
                 <li ><a href="laptopa.php">Laptopa</a></li>
-                <li><a href="mycart.html">Karta</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="#">Partner&euml;t</a>
-                    <ul>
-                        <li><a target="_blank" href="http://kosovatrade-ks.com/">KosovaTrade</a></li>
-                        <li><a target="_blank" href="https://telegrafi.com/">Telegrafi</a></li>
-                        <li><a target="_blank" href="http://www.sigkos.com/">SigKos</a></li>
-                    </ul>
-                </li>
+                <li><a href="cart.php">Karta</a></li>
+                <li><a href="perne.php">Per ne</a></li>
             </ul>
         </nav>
     </div>
