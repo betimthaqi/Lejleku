@@ -39,7 +39,9 @@ $database = new CreateDb();
 </head>
 
 <body>
-    <?php require_once("components/header.php"); ?>
+    <?php require_once("components/header.php");
+
+    ?>
     <!-- slideri -->
         <div id="container" class="clear">
             <div id="homepage">
