@@ -52,7 +52,8 @@ require_once('./php/component.php');
       <div class="containercard">
         <h2> Dren Gashi </h2>
         <p class="title"> Drejtor </p>
-        <p>I shkath&euml;t e orator, gjithmon i buzeqëshur dhe i hareshëm, ke dëshirë të punosh me të. </p>
+<p>Potencial krijues dhe punues,i përqendruar në dhënien impulseve kualitative dhe kreative, në ndërtimin avancues të kapaciteteve profesionale të organizimit.</p>
+        
         <p><button class="button"><a href="mailto:dreni-shqiptar@gmail.com">Contact</a></button></p>
       </div>
     </div>
@@ -64,7 +65,8 @@ require_once('./php/component.php');
       <div class="containercard">
         <h2>Nimete Dautaj</h2>
         <p class="title">Shitese</p>
-        <p>Qofse ajo ju buzeqesh nuk mund të dilni nga dyqani pa blerë diqka. Eshtë e gjindshme në situata të sikletshme.</p>
+<p>Ne frymëzojmë, mbështesim, udhëzojmë dhe kemi mundësinë që të zbulojmë dhe ndajmë disa nga paisjet më të mira në vend.Asnjëherë mungesë pozitiviteti.</p>
+
       <p><button class="button"><a href="mailto:nimeti_3nt@postribe.com">Contact</a></button></p>
       </div>
     </div>
@@ -76,7 +78,8 @@ require_once('./php/component.php');
       <div class="containercard">
         <h2>Blond Muzaka</h2>
         <p class="title">Programer</p>
-        <p>Një kompani si kjo nuk mund të mos kishte njërin nga programerët më të mirë në vend.</p>
+        <p>Një kompani si kjo nuk mund të mos kishte njërin nga programerët më të mirë në vend.
+"Kur nuk krijoni gjëra, ju bëheni më të përcaktuar nga shijet tuaja sesa nga aftësia".</p>
         <p><button class="button"><a href="mailto:messi.1993@live.com">Contact</a></button></p>
       </div>
     </div>

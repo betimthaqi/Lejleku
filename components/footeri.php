@@ -24,10 +24,10 @@
                     <h2 class="title">Stay Social</h2>
                     <nav>
                         <ul>
-                            <li><img src="images/social/linkedin.png" alt=""><a href="#">LinkedIn</a></li>
-                            <li><img src="images/social/twitter.png" alt=""><a href="#">Twitter</a></li>
-                            <li><img src="images/social/pinterest.png" alt=""><a href="#">Pinterest</a></li>
-                            <li><img src="images/social/rss.png" alt=""><a href="#">RSS Feed</a></li>
+                            <li><a href="https://www.linkedin.com/" target="_blank"><img src="images/social/linkedin.png" alt=""><a href="#">LinkedIn</a></li>
+                            <li><a href="https://twitter.com/explore" target"_balnk"><img src="images/social/twitter.png" alt=""><a href="#">Twitter</a></li>
+                            <li><a href="https://www.pinterest.com/" target"_balnk"><img src="images/social/pinterest.png" alt=""><a href="#">Pinterest</a></li>
+                            <li><a href="https://twitter.com/explore" target"_balnk"><img src="images/social/rss.png" alt=""><a href="#">RSS Feed</a></li>
                         </ul>
                     </nav>
                 </section>

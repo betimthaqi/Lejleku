@@ -428,8 +428,9 @@ a {
   float: left;
   width: 30%;
   margin-top: 50px;
-  margin-bottom: 16px;
+  margin-bottom:16px;
   padding: 0 8px;
+
 }
 
 /* Add some shadows to create a card effect */
@@ -443,6 +444,7 @@ a {
   line-height: 1.5em;
   padding: 0 16px;
   text-align: center;
+
 }
 
 .title {
