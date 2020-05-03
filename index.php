@@ -3,6 +3,7 @@ session_start();
 
 require_once('php/CreateDb.php');
 require_once('./php/component.php');
+require 'php/loginconfig.php';
 
 
 // create instance of Createdb class
@@ -39,9 +40,44 @@ $database = new CreateDb();
 </head>
 
 <body>
-    <?php require_once("components/header.php");
-
+    <?php
+    // per headerin
+    require_once("components/header.php");
     ?>
+
+<?php
+//per login form
+
+if(isset($_POST['login']))
+{
+  $username=$_POST['username'];
+  $password=$_POST['password'];
+
+  $query="select * from user WHERE username='$username' AND password='$password'";
+
+  $query_run = mysqli_query($con,$query);
+  if(mysqli_num_rows($query_run)>0)
+  {
+    $_SESSION['username']= $username;
+
+  }
+  else
+  {
+    echo '<script type="text/javascript"> alert("Perdoruesi nuk ekziston") </script>';
+    header('location:login.php?PerdoruesiNukEkziston');
+  }
+}
+?>
+<?php // mesazhi ne fillim qofse je i loguar
+if(isset($_POST['login'])){
+echo '<h1 style="text-align: center; text-shadow: 2px 2px 5px #CB9530;"> Mireserdhet ne platformen tone, ';
+echo $username;
+echo '</h1>';
+}
+else {
+echo '<h1 style="text-align: center; text-shadow: 2px 2px 5px #CB9530;"> Pershendetje, ju lutemi te kyqeni ne platformen tone per sherbime me te avancuara </h1>';
+}
+?>
     <!-- slideri -->
         <div id="container" class="clear">
             <div id="homepage">
