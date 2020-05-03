@@ -1,5 +1,6 @@
 <?php 
 //message vars 
+
 $msg= '';
 $msgClass ='';
 //check for Submit
@@ -17,12 +18,14 @@ if(!empty($email) && !empty($name) && !empty($message)){
 //check email
 		if(filter_var($email, FILTER_VALIDATE_EMAIL)==false)
 {
-	$msg='Please use a valid email';
+	$msg='Please use a valid email (example@gmail.com)';
 	$msgClass='alert-danger';
+
 }
 			else {
 	//pass
-		$msg='Your email was sent';
+		//$msg='Your email was sent';
+		$msg="Thanks ".$_POST['name'].".We'll get back to you soon!";
 		$msgClass='alert-success';
 		}
 		
@@ -49,39 +52,41 @@ else{
 </head>
 <body>
 	<nav class="navbar navbar-default">
-	<div class="container">
+	
 		<div class="navbar-header">
 			<a class="navbar-brand" href="index.php">Lejleku</a>
 			</div>
-		</div>
+		
 	</nav>
 
 	<div class="container">
+<div class="center"><h1>CONTACT US FOR ANY QUESTION</h1></div>
+	
+	
+	
 	<?php if($msg!=''): ?>
 		<div class ="alert <?php echo $msgClass; ?>"><?php echo $msg; ?></div>
 	<?php endif; ?>
 	<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+
 	<div class="container">  
-  <!--<form id="contact" action="" method="post">-->
-  
-		<!--<div class="form-group">-->
+
+
 
 			<label for="fname">Full Name</label>
-			<input type="text" id="fname" name="name"value="<?php echo isset($_POST['name']) ? $name :'';?>">
-		<!--</div>-->
-		<!--<div class="form-group">-->
+			<input type="text"  name="name"value="<?php echo isset($_POST['name']) ? $name :'';?>">
+
 			<label for="fname">Email</label>
-			<input type="text" id="fname" name="email" value="<?php echo isset($_POST['email']) ? $email :'';?>">
-		<!--</div>-->
-		<!--<div class="form-group">-->
+			<input type="text" name="email" value="<?php echo isset($_POST['email']) ? $email :'';?>">
+
 			<label for="subject">Message</label>
-			<textarea name="message" id="subject" style="height:200px"><?php echo isset($_POST['message']) ? $message :'';?></textarea>
-			<!--</div>-->
+			<textarea name="message"  style="height:200px"><?php echo isset($_POST['message']) ? $message :'';?></textarea>
+
 			<input type="submit" name="submit" class="">
 			</form>
 		
 		</div>
-	
+	</div>
 			
 </body>
 </html>
