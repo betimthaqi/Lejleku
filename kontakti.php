@@ -1,17 +1,17 @@
-<?php 
-//message vars 
+<?php
+//message vars
 
 $msg= '';
 $msgClass ='';
 //check for Submit
-////kjo <?php echo isset($_POST['name']) ? $name :''; per me rujt qato qe i ka shkru nese e bon fail najsen			
+////kjo <?php echo isset($_POST['name']) ? $name :''; per me rujt qato qe i ka shkru nese e bon fail najsen
 //
 
 if(filter_has_var(INPUT_POST,'submit')){
 //get form data
 $name=htmlspecialchars($_POST['name']);
 $email=htmlspecialchars($_POST['email']);
-$message=htmlspecialchars($_POST['message']);  
+$message=htmlspecialchars($_POST['message']);
 //check required fields
 if(!empty($email) && !empty($name) && !empty($message)){
 //pass
@@ -28,12 +28,12 @@ if(!empty($email) && !empty($name) && !empty($message)){
 		$msg="Thanks ".$_POST['name'].".We'll get back to you soon!";
 		$msgClass='alert-success';
 		}
-		
+
 }
 else{
 	//fail
 	$msg='Please fill in all fields';
-	
+
 	$msgClass='alert-danger';
 
 	}
@@ -47,29 +47,29 @@ else{
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
 	<title>Contact us</title>
-	<link rel="stylesheet" href="conStyle.css">
-	
+	<link rel="stylesheet" href="css/conStyle.css">
+
 </head>
 <body>
 	<nav class="navbar navbar-default">
-	
+
 		<div class="navbar-header">
 			<a class="navbar-brand" href="index.php">Lejleku</a>
 			</div>
-		
+
 	</nav>
 
 	<div class="container">
 <div class="center"><h1>CONTACT US FOR ANY QUESTION</h1></div>
-	
-	
-	
+
+
+
 	<?php if($msg!=''): ?>
 		<div class ="alert <?php echo $msgClass; ?>"><?php echo $msg; ?></div>
 	<?php endif; ?>
 	<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
 
-	<div class="container">  
+	<div class="container">
 
 
 
@@ -84,9 +84,9 @@ else{
 
 			<input type="submit" name="submit" class="">
 			</form>
-		
+
 		</div>
 	</div>
-			
+
 </body>
 </html>
