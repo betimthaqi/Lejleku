@@ -54,6 +54,7 @@
                 <li ><a href="laptopa.php">Laptopa</a></li>
                 <li><a href="cart.php">Karta</a></li>
                 <li><a href="perne.php">Per ne</a></li>
+                <li><a href="kontakti.php">Kontakti</a></li>
             </ul>
         </nav>
     </div>
