@@ -7,7 +7,9 @@
         </div>
         <div id="header-contact">
             <ul class="list none">
+			
                 <li>Search bar</li>
+				
                 <li><a href="cart.php">
                         <img src="./images/shoppingbasket.png" width="50px" height="50px" alt="">
                         <?php
@@ -37,6 +39,12 @@
                 ?></li>
             </ul>
         </div>
+
+<!-- search bar-->
+
+
+
+
         <!-- menyt kryesore -->
     </header>
     <div class="wrapper row2">
