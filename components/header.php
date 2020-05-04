@@ -20,27 +20,19 @@
                         ?>
                     </a></li>
                 <li><?php
-                if(isset($_POST['login'])){
-                  echo '<a href="index.php"><button class="kyq" name="shkyqu" style="	margin-top:10px;
+                if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+                  echo '<a href="login.php"><button class="kyq" name="kyqu" style="	margin-top:10px;
+                   color: white;
+                   margin-bottom:15px;
+                   padding: 10px 25px;
+                   background-color: #CB9530;"> Kyçu </button></a>';
+                }
+                else{
+                  echo '<a href="login.php"><button class="kyq" name="shkyqu" style="	margin-top:10px;
                   	color: white;
                   	margin-bottom:15px;
                     padding: 10px 25px;
                     background-color: #080613;"> Shkyçu </button></a>';
-                    if(isset($_POST['shkyqu'])){
-                      session_destroy();
-                      echo '<a href="login.php"><button class="kyq" name="kyqu" style="	margin-top:10px;
-                      color: white;
-                      margin-bottom:15px;
-                      padding: 10px 25px;
-                      background-color: #CB9530;"> Kyçu </button></a>';
-                    }
-                }
-                else {
-                    echo '<a href="login.php"><button class="kyq" name="kyqu" style="	margin-top:10px;
-                  	color: white;
-                  	margin-bottom:15px;
-                    padding: 10px 25px;
-                    background-color: #CB9530;"> Kyçu </button></a>';
                 }
                 ?></li>
             </ul>
