@@ -1,6 +1,11 @@
 /*Stilizimi i login form dhe register form*/
+#bckr{
+	background: url("../images/background.jpg") no-repeat top center;
+	background-size:cover;
+	height:100vh;
+}
 
-#main-wrapper{
+#main-wrapperlogin{
 	width:500px;
 	margin: 0 auto;
 	background:white;
@@ -10,6 +15,7 @@
 }
 
 .logo{
+	margin: 20px;
 	width:150px;
 	text-align:center;
 }
@@ -20,18 +26,11 @@
 }
 
 .inputvalues{
-	width:430px;
+	width:100%;
 	margin:5px auto;
 	padding:2px;
 }
 
-.radiobtns{
-	margin: 10px;
-}
-
-.selectbox{
-margin: 10px;
-}
 
 #login_btn{
 	margin-top:10px;
@@ -56,6 +55,7 @@ margin: 10px;
 	font-weight:bold;
 }
 
+
 #signup_btn{
 	margin-top:10px;
 	background-color:#3498db;
@@ -69,7 +69,7 @@ margin: 10px;
 
 #back_btn{
 	margin-top:10px;
-	background-color:#e74c3c;
+	background-color: black;
 	padding:5px;
 	color:white;
 	width:30%;
@@ -88,4 +88,9 @@ margin: 10px;
 	font-size:18px;
 	font-weight:bold;
 	margin-bottom:20px;
+}
+
+#help-block {
+	text-decoration: none;
+	color: red;
 }
