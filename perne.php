@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once('./php/component.php');
 ?>
 
@@ -13,8 +14,7 @@ require_once('./php/component.php');
   </head>
   <body>
       <?php require_once("components/header.php"); ?>
-            <!-- #######################################MENYT KRYESORE################################################### -->
-            <!-- ########################################################################################## -->
+      
 <div>
   <!-- #######################################PERMBAJTJA PREJ QETUHIT################################################### -->
   <!-- ########################################################################################## -->
@@ -53,7 +53,7 @@ require_once('./php/component.php');
         <h2> Dren Gashi </h2>
         <p class="title"> Drejtor </p>
 <p>Potencial krijues dhe punues,i përqendruar në dhënien impulseve kualitative dhe kreative, në ndërtimin avancues të kapaciteteve profesionale të organizimit.</p>
-        
+
         <p><button class="button"><a href="mailto:dreni-shqiptar@gmail.com">Contact</a></button></p>
       </div>
     </div>

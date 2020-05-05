@@ -29,7 +29,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   ?>
       <div style="margin: 50px 0px;">
       <div class="page-header">
-        <h1 style="font-size: 50px">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site.</h1>
+        <h1 style="font-size: 50px">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Mireserdhe ne webfaqen tone.</h1>
     </div>
     <p style="padding: 25px">
         <a href="index.php" id="logout_btn" style="background-color: green;">Shko te Homepage</a>

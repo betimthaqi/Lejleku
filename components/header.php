@@ -7,9 +7,9 @@
         </div>
         <div id="header-contact">
             <ul class="list none">
-			
+
                 <li>Search bar</li>
-				
+
                 <li><a href="cart.php">
                         <img src="./images/shoppingbasket.png" width="50px" height="50px" alt="">
                         <?php
@@ -23,18 +23,12 @@
                     </a></li>
                 <li><?php
                 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-                  echo '<a href="login.php"><button class="kyq" name="kyqu" style="	margin-top:10px;
-                   color: white;
-                   margin-bottom:15px;
-                   padding: 10px 25px;
-                   background-color: #CB9530;"> Kyçu </button></a>';
+                  echo '<a href="login.php"><img src="images/loginlogo.png"
+                  height="64" width="64"></a>';
                 }
                 else{
-                  echo '<a href="login.php"><button class="kyq" name="shkyqu" style="	margin-top:10px;
-                  	color: white;
-                  	margin-bottom:15px;
-                    padding: 10px 25px;
-                    background-color: #080613;"> Shkyçu </button></a>';
+                  echo '<a href="login.php"><img src="images/logoutlogo.png"
+                  height="62" width="62"></a>';
                 }
                 ?></li>
             </ul>

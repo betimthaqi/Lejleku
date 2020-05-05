@@ -102,7 +102,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </style>
 </head>
 <body id="bckr">
-    <div id="main-wrapper">
+    <div id="main-wrapperlogin">
       <h2 style="text-align: center">Regjistrimi</h2>
       <center><img src="images/logo.png" class="logo"></img></center>
         <p><b>Plotesoni te dhenat per te krijuar nje llogari</b></p>

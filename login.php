@@ -97,15 +97,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </style>
 </head>
 <body id="bckr">
-  
-    <div id="main-wrapper">
+
+    <div id="main-wrapperlogin">
         <h2 style="text-align: center">Kyqja</h2>
         <center><img src="images/logo.png" class="logo"></img></center>
         <p><b>Shenoni te dhenat tuaja per ty kyqur.</b></p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                 <label>Perdoruesi</label>
-                <input type="text" name="username" class="inputvalues" value="<?php echo $username; ?>" placeholder="Shenoni emrin e perdoruesit">
+                <input type="text" name="username" class="inputvalues" value="<?php echo $username; ?>" placeholder="Shenoni emrin e perdoruesit...">
                 <span id="help-block"><?php echo $username_err; ?></span>
             </div>
             <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
@@ -114,8 +114,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <span id="help-block"><?php echo $password_err; ?></span>
             </div>
             <div class="form-group">
-                <input type="submit" id="login_btn" value="Login">
-                <input type="button" id="login_btn" value="Kthehu te faqja kryesore" style="background-color: grey;" onclick="window.location.href = 'index.php';">
+                <input type="submit" id="login_btn" value="Kyqu">
+                <input type="button" id="login_btn" value="Kthehu" style="background-color: grey;" onclick="window.location.href = 'index.php';">
             </div>
             <p>Nuk keni nje llogari? <a href="registration.php">Regjistrohu ketu</a>.</p>
         </form>

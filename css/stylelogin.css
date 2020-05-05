@@ -1,6 +1,6 @@
 /*Stilizimi i login form dhe register form*/
 #bckr{
-	background: url("../images/background.jpg") no-repeat top center;
+	background: url("../images/loginbackground.jpg") no-repeat top center;
 	background-size:cover;
 	height:100vh;
 }
@@ -8,7 +8,7 @@
 #main-wrapperlogin{
 	width:500px;
 	margin: 0 auto;
-	background:white;
+	background: url("../images/loginbackground2.jpg") no-repeat top center;
 	padding:5px;
 	border-radius:10px;
 	border: 5px solid #C4902F;
@@ -26,18 +26,18 @@
 }
 
 .inputvalues{
-	width:100%;
+	width: 475px;
 	margin:5px auto;
-	padding:2px;
+	padding:10px;
 }
 
 
 #login_btn{
 	margin-top:10px;
-	background-color:#27ae60;
+	background-color:#50A65F;
 	padding:5px;
 	color:white;
-	width:100%;
+	width:100px;
 	text-align:center;
 	font-size:18px;
 	font-weight:bold;
@@ -49,7 +49,7 @@
 	background-color:#3498db;
 	padding:5px;
 	color:white;
-	width:100%;
+	width:100px;
 	text-align:center;
 	font-size:18px;
 	font-weight:bold;
@@ -61,7 +61,7 @@
 	background-color:#3498db;
 	padding:5px;
 	color:white;
-	width:100%;
+	width:100px;
 	text-align:center;
 	font-size:18px;
 	font-weight:bold;
@@ -72,7 +72,7 @@
 	background-color: black;
 	padding:5px;
 	color:white;
-	width:30%;
+	width:100px;
 	text-align:center;
 	font-size:18px;
 	font-weight:bold;
@@ -83,7 +83,7 @@
 	background-color:#c0392b;
 	padding:5px;
 	color:white;
-	width:100%;
+	width:100px;
 	text-align:center;
 	font-size:18px;
 	font-weight:bold;
@@ -91,6 +91,7 @@
 }
 
 #help-block {
+	margin: 10px;
 	text-decoration: none;
 	color: red;
 }
