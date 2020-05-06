@@ -24,11 +24,13 @@ if (isset($_POST['remove'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
-    <link rel="stylesheet" href="css/cart.css">
+<link rel="stylesheet" href="css/cart.css">
     <link rel="stylesheet" href="css/layout.css">
 </head>
 
 <body>
+<div class="row">
+  <div class="column">
     <?php
     require_once('components/header.php');
     ?>
@@ -52,7 +54,9 @@ if (isset($_POST['remove'])) {
             }
             ?>
         </div>
-
+		</div>
+</div>
+<div>
         <div class="total-price">
             <h6>price details</h6>
             <hr>
@@ -67,13 +71,14 @@ if (isset($_POST['remove'])) {
             <h6>Delivery Charges</h6>
             <hr>
             <h6>Amount Payable</h6>
-        </div>
-        <div class="total-price">
+       
+
             <?php
             echo $total;
             ?>
-        </div>
+</div>
     </div>
+
 <?php require_once("components/footeri.php")?>
 <div class="wrapper row5">
         <footer id="copyright" class="clear">

@@ -7,3 +7,41 @@
     vertical-align: top;
     font-size: 18px;
 }
+
+/*.carta{
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+.container-carta{
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+
+
+.carta{
+margin-right:30px;
+float: center;
+margin-top: 30px;
+margin-bottom: 20px;
+border: 5px solid black;
+border-radius: 0px;
+
+}*/
+.carta{
+	width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;
+}
+.total-price{
+margin-right:30px;
+float: center;
+margin-top: 30px;
+margin-bottom: 20px;
+border: 5px solid black;
+border-radius: 0px;
+}
+
+
