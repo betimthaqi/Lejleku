@@ -62,7 +62,7 @@ a {
     width: 350px;
     position: relative;
     box-shadow: 0 2px 7px #dfdfdf;
-    background: #fafafa;
+
     display: inline-block;
     margin: 50px 12.8px;
 }
@@ -151,6 +151,3 @@ a {
     display: inline-block;
     margin-right: 5px;
 }
-
-
-/* Three columns side by side */

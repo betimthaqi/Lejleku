@@ -37,8 +37,8 @@ if (isset($_POST['add'])) {
     }
 }
 
-
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -49,27 +49,39 @@ if (isset($_POST['add'])) {
     <title>Shoppin cart</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/pricerange.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body>
-    <?php require_once("components/header.php"); ?>
-    <div id="laptopa">
+    <?php require_once("components/header.php");
+    require_once("components/pricerange.php");
+    ?>
+    <center><div>
+    <?php
+        pricerange("Productdb","laptopa"); // me zgjedh tabelen ncilen po don me ekzekutu queryn per price range
+    ?>
+    <!-- <div id="laptopa">
         <?php
         $result = $database->getData();
         while ($row = mysqli_fetch_assoc($result)) {
             component($row['product_name'], $row['product_price'], $row['product_image'], $row['id']);
         }
-        ?>
+        ?>-->
     </div>
-
     <?php require_once("components/footeri.php"); ?>
+
     <!-- Copyright -->
     <div class="wrapper row5">
         <footer id="copyright" class="clear">
             <p class="fl_left">Copyright &copy; 2020 - All Rights Reserved - <a href="#">Grupi 7</a></p>
             <p class="fl_right">Projekti ne <a target="_blank" href="https://github.com/durajetz/INT19_20_Gr7" title="">Github</a></p>
         </footer>
-    </div>
+    </div></center>
 </body>
 
 </html>

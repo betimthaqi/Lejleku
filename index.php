@@ -19,6 +19,7 @@ $database = new CreateDb();
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
     <script src="scripts/jquery.min.js"></script>
     <script src="scripts/jquery-defaultvalue.js"></script>
     <!-- homepage scripts -->
@@ -140,7 +141,17 @@ echo '<h1 style="text-align: center; text-shadow: 2px 2px 5px #CB9530;"> Pershen
             <p class="fl_right">Projekti ne <a target="_blank" href="https://github.com/durajetz/INT19_20_Gr7" title="">Github</a></p>
         </footer>
     </div>
+    <script>
+        const input = document.getElementById("search-input");
+    const searchBtn = document.getElementById("search-btn");
 
+    const expand = () => {
+      searchBtn.classList.toggle("close");
+      input.classList.toggle("square");
+    };
+
+    searchBtn.addEventListener("click", expand);
+    </script>
 </body>
 
 </html>

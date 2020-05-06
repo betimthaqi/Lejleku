@@ -92,32 +92,50 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <title>Kyqja</title>
     <link rel="stylesheet" href="css/stylelogin.css">
     <style type="text/css">
-        body{ font: 14px sans-serif; }
-        .wrapper{ width: 350px; padding: 20px; }
+        body {
+            font: 14px sans-serif;
+        }
+
+        .wrapper {
+            width: 350px;
+            padding: 20px;
+        }
     </style>
 </head>
 <body id="bckr">
-
     <div id="main-wrapperlogin">
-        <h2 style="text-align: center">Kyqja</h2>
-        <center><img src="images/logo.png" class="logo"></img></center>
-        <p><b>Shenoni te dhenat tuaja per ty kyqur.</b></p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-            <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
-                <label>Perdoruesi</label>
-                <input type="text" name="username" class="inputvalues" value="<?php echo $username; ?>" placeholder="Shenoni emrin e perdoruesit...">
-                <span id="help-block"><?php echo $username_err; ?></span>
+            <div id="login-box">
+                <div class="left">
+                    <h1>Sign in</h1>
+
+                    <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
+                        <input type="text" name="username" value="<?php echo $username; ?>" placeholder="Username" />
+
+                    </div>
+
+                    <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+                        <input type="password" name="password" value="<?php echo $password; ?>" placeholder="Password" />
+
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" name="signup_submit" value="Submit" />
+                        <input type="button"  value="sing up" onclick="window.location='registration.php';">
+                    </div>
+                    <span id="help-block"><?php echo $username_err; ?></span>
+                    <span id="help-block"><?php echo $password_err; ?></span>
+                </div>
+
+                <div class="right">
+                    <span class="loginwith">Sign in with<br />social network</span>
+
+                    <button class="social-signin facebook">Log in with facebook</button>
+                    <button class="social-signin twitter">Log in with Twitter</button>
+                    <button class="social-signin google">Log in with Google+</button>
+                </div>
+                <div class="or">OR</div>
             </div>
-            <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
-                <label>Fjalekalimi</label>
-                <input type="password" name="password" class="inputvalues" placeholder="Shenoni fjalekalimin...">
-                <span id="help-block"><?php echo $password_err; ?></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" id="login_btn" value="Kyqu">
-                <input type="button" id="login_btn" value="Kthehu" style="background-color: grey;" onclick="window.location.href = 'index.php';">
-            </div>
-            <p>Nuk keni nje llogari? <a href="registration.php">Regjistrohu ketu</a>.</p>
         </form>
     </div>
 </body>

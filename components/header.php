@@ -8,10 +8,20 @@
         <div id="header-contact">
             <ul class="list none">
 
-                <li>Search bar</li>
+                <li>
+                  <form action="search.php" method="POST">
+                      <div class="search-wrapper">
+                          <div class="input-holder">
+                              <input type="text" class="search-input" name="search" placeholder="Type to search" />
+                              <button class="search-icon" type="submit" name="submit-search" onclick="searchToggle(this, event);"><span></span></button>
+                          </div>
+                          <span class="close" onclick="searchToggle(this, event);"></span>
+                      </div>
+                  </form>
+                </li>
 
                 <li><a href="cart.php">
-                        <img src="./images/shoppingbasket.png" width="50px" height="50px" alt="">
+                        <img src="./images/shoppingbasket.png" width="65px" height="65px" alt="">
                         <?php
                         if (isset($_SESSION['cart'])) {
                             $count = count($_SESSION['cart']);
@@ -21,24 +31,18 @@
                         }
                         ?>
                     </a></li>
-                <li><?php
+                    <li><?php
                 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-                  echo '<a href="login.php"><img src="images/loginlogo.png"
+                  echo '<a href="login.php"><img id="kyqu" src="images/loginicon.png"
                   height="64" width="64"></a>';
                 }
                 else{
-                  echo '<a href="login.php"><img src="images/logoutlogo.png"
+                  echo '<a href="login.php"><img src="images/logouticon.png"
                   height="62" width="62"></a>';
                 }
                 ?></li>
             </ul>
         </div>
-
-<!-- search bar-->
-
-
-
-
         <!-- menyt kryesore -->
     </header>
     <div class="wrapper row2">
@@ -46,8 +50,8 @@
             <ul class="clear">
                 <li class="first active"><a href="index.php">Homepage</a></li>
                 <li ><a href="laptopa.php">Laptopa</a></li>
-<li><a href="telefon.php">Telefon</a></li>
-<li><a href="aksesor.php">Aksesorë</a></li>
+                <li><a href="telefon.php">Telefon</a></li>
+                <li><a href="aksesor.php">Aksesorë</a></li>
                 <li><a href="perne.php">Per ne</a></li>
                 <li><a href="cart.php">Karta</a></li>
 
@@ -58,3 +62,16 @@
     </div>
 
 </div>
+<script>
+    function searchToggle(obj, evt) {
+        var container = $(obj).closest('.search-wrapper');
+        if (!container.hasClass('active')) {
+            container.addClass('active');
+            evt.preventDefault();
+        } else if (container.hasClass('active') && $(obj).closest('.input-holder').length == 0) {
+            container.removeClass('active');
+            // clear input
+            container.find('.search-input').val('');
+        }
+    }
+</script>
