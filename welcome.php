@@ -1,6 +1,7 @@
 <?php
 
 session_start();
+require_once('./php/component.php');
 
 
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
@@ -16,7 +17,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <title>Welcome</title>
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/stylelogin.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/pricerange.css">
     <style type="text/css">
         body{ font: 14px sans-serif; text-align: center; }
     </style>

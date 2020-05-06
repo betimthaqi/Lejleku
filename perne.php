@@ -10,11 +10,15 @@ require_once('./php/component.php');
     <title>Lejleku - Per ne</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/perne.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/pricerange.css">
     <link rel="icon" href="images/logo-bar.png" type="image/x-icon">
   </head>
   <body>
       <?php require_once("components/header.php"); ?>
-      
+
 <div>
   <!-- #######################################PERMBAJTJA PREJ QETUHIT################################################### -->
   <!-- ########################################################################################## -->
