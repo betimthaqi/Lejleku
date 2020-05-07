@@ -65,12 +65,12 @@ text-align:center;}
   flex-direction: column;
 
 
-}
+}/*
 .like-btn {
 position: absolute;
   top: 9px;
   left: 15px;
-  background: url('twitter-heart.png');*/
+ 
   width: 60px;
   height: 60px;
   background-size: 2900%;
@@ -92,7 +92,6 @@ position: absolute;
   background: url(&quot;delete-icn.svg&quot;) no-repeat center;
 }*/
 
- 
 #header-contact ul #cart_count {
     border-radius: 100%;
     font-size: 12px;
@@ -262,4 +261,5 @@ position: absolute;
 
 #kyqu {
     transform: translate(-40%, 0%);
+
 }
