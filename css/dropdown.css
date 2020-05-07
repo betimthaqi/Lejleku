@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:700,800&display=swap');
+.dropdownlist {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    float: left;
+}
+
+.dropdownlist select {
+    border-radius: 20px;
+    margin: 20px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 14pt;
+    font-weight: 800;
+    border-style: none;
+    color: rgb(223, 223, 223);
+    letter-spacing: 3pt;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    background: rgba(29, 29, 29, 0.9);
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.dropdownlist select option[value="RISI"]:hover {
+    transform: scale(1.1);
+    background-color: yellow;
+    border-radius: 20px;
+}
+
+.dropdownlist select option[value="STOCK"]:hover {
+    transform: scale(1.1);
+    background-color: blue;
+    border-radius: 20px;
+}
+
+.dropdownlist select option[value="OFERT 48H"]:hover {
+    transform: scale(1.1);
+    background-color: red;
+    border-radius: 20px;
+}
+
+@keyframes sliding {
+    to {
+        background-position: 2500em;
+    }
+}
+
+.dropdownlist select:active {
+    transform: scale(1.1);
+}
