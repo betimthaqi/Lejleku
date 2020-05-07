@@ -9,6 +9,7 @@
     font-size: 18px;
 }
 
+
 /*.carta{
   margin: 5px;
   border: 1px solid #ccc;
@@ -24,7 +25,7 @@
 }
 
 
-/*.carta{
+.carta{
 margin-right:30px;
 float: center;
 margin-top: 30px;
@@ -35,17 +36,63 @@ border-radius: 0px;
 }
 .carta{
 	width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;
-}
+}*/
 .total-price{
-margin-right:30px;
+text-align:center;
+width:30%;
 float: center;
 margin-top: 30px;
-margin-bottom: 20px;
-border: 5px solid black;
-border-radius: 0px;
+margin:auto;
+border: 2px solid#d9d9d9;
+border-radius: 5px;
+background-color:white;
+
+}
+
+.top{
+padding:3px;
+text-align:center;}
+/*
+.container-carta{
+  width: 750px;
+  height: 423px;
+ /* margin: 80px auto;*/
+  background: #FFFFFF;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+  border-radius: 6px;
+ 
+  display: flex;
+  flex-direction: column;
+
+
+}
+.like-btn {
+position: absolute;
+  top: 9px;
+  left: 15px;
+  background: url('twitter-heart.png');*/
+  width: 60px;
+  height: 60px;
+  background-size: 2900%;
+  background-repeat: no-repeat;
+}
+.buttons {
+  position: relative;
+  padding-top: 30px;
+  margin-right: 60px;
+}
+.remove,
+.like-btn {
+  display: inline-block;
+  Cursor: pointer;
+}
+.remove {
+  width: 18px;
+  height: 17px;
+  background: url(&quot;delete-icn.svg&quot;) no-repeat center;
 }*/
 
-
+ 
 #header-contact ul #cart_count {
     border-radius: 100%;
     font-size: 12px;

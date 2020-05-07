@@ -27,7 +27,7 @@ require_once('./php/component.php');
     <h1 class="chap">Rreth Lejleku</h1>
 
     <p class="par">Kompania e jonë “Lejleku”  &euml;sht&euml; themeluar n&euml; vitin 2003.
-      Fillimisht kemi qen të parët që shesim produkte të teknologjisë në Kosovë, me një rrjet të dyqaneve në tërë Kosovën.
+      Fillimisht kemi qenë të parët që shesim produkte të teknologjisë në Kosovë, me një rrjet të dyqaneve në tërë Kosovën.
       Që nga viti 2009 jemi të parët të cilet shesim edhe online, më një konkurenc zero nga të tjerët.</p>
 </div>
 
@@ -42,8 +42,8 @@ require_once('./php/component.php');
 <div class="rrethne oo">
 <h1 class="chap">Vizioni</h1>
 <p class="par">Vizioni i Lejlekut është qëndrimi në tregun e Kosoves si lider dhe pakonkurencë
-  për shitje të paisjeve teknologjike dhe zgjerimi i saj i vazhdueshëm, duke vazhduar gjithmon në rritjen
-  e cilësisë së produkteve por duke zbritur qmimet vazhdimisht.
+  për shitje të paisjeve teknologjike dhe zgjerimi i saj i vazhdueshëm, duke vazhduar gjithmonë në rritjen
+  e cilësisë së produkteve me cmimet volitshme.
   </p>
 </div>
 </div>
@@ -69,7 +69,7 @@ require_once('./php/component.php');
       <div class="containercard">
         <h2>Nimete Dautaj</h2>
         <p class="title">Shitese</p>
-<p>Ne frymëzojmë, mbështesim, udhëzojmë dhe kemi mundësinë që të zbulojmë dhe ndajmë disa nga paisjet më të mira në vend.Asnjëherë mungesë pozitiviteti.</p>
+<p>Ne frymëzojmë, mbështesim, udhëzojmë dhe kemi mundësinë që të zbulojmë dhe ndajmë disa nga paisjet më të mira në vend. Asnjëherë mungesë pozitiviteti.</p>
 
       <p><button class="button"><a href="mailto:nimeti_3nt@postribe.com">Contact</a></button></p>
       </div>
@@ -83,7 +83,7 @@ require_once('./php/component.php');
         <h2>Blond Muzaka</h2>
         <p class="title">Programer</p>
         <p>Një kompani si kjo nuk mund të mos kishte njërin nga programerët më të mirë në vend.
-"Kur nuk krijoni gjëra, ju bëheni më të përcaktuar nga shijet tuaja sesa nga aftësia".</p>
+Kur nuk krijoni gjëra, ju bëheni më të përcaktuar nga shijet tuaja sesa nga aftësia.</p>
         <p><button class="button"><a href="mailto:messi.1993@live.com">Contact</a></button></p>
       </div>
     </div>

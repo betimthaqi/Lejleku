@@ -34,6 +34,7 @@ if (isset($_POST['remove'])) {
     <?php
     require_once('components/header.php');
     ?>
+
     <div class="container-carta">
         <div class="carta">
             <?php
@@ -58,23 +59,22 @@ if (isset($_POST['remove'])) {
 </div>
 <div>
         <div class="total-price">
-            <h6>price details</h6>
+            <div class="top"><h3>PRICE DETAILS</h3></div>
             <hr>
             <?php
             if (isset($_SESSION['cart'])) {
                 $count = count($_SESSION['cart']);
-                echo "<h6>Price ($count items)</h6>";
+                echo "<h5>Price ($count items) $$total</h5>";
             } else {
-                echo "<h6>Price (0 items)</h6>";
+                echo "<h5>Price (0 items)</h5>";
             }
             ?>
-            <h6>Delivery Charges</h6>
+            <h5>Delivery Charges</h5>
             <hr>
-            <h6>Amount Payable</h6>
        
 
             <?php
-            echo $total;
+            echo "<h5>Amount Payable $$total</h5>";
             ?>
 </div>
     </div>
