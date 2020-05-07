@@ -1,14 +1,9 @@
 <?php
-<<<<<<< Updated upstream
-$min = 100;
-$max = 2000;
-=======
 require_once('./php/component.php');
 $conn = new mysqli("185.67.178.114", "durajet2", "2IywPrkXgacX1BRxl0wBgvy7diQ8t01Glm+n0QqG", "durajet2_db");
 
 $min = 100;
 $max = 5000;
->>>>>>> Stashed changes
 
 if (!empty($_POST['min_price'])) {
     $min = $_POST['min_price'];
@@ -17,8 +12,6 @@ if (!empty($_POST['min_price'])) {
 if (!empty($_POST['max_price'])) {
     $max = $_POST['max_price'];
 }
-<<<<<<< Updated upstream
-=======
 
 $product_ofertaResult = runQuery("SELECT DISTINCT product_oferta FROM Allproducts ORDER BY product_oferta ASC");
 function runQuery($query)
@@ -31,7 +24,6 @@ function runQuery($query)
     if (!empty($resultset))
         return $resultset;
 }
->>>>>>> Stashed changes
 ?>
 <div class="box">
     <a href="#" class="btn btn-white btn-animation-1" onclick="myFunction()"><img src="images/filterpng.png" width="40px" height="40px" alt=""></a>
@@ -39,18 +31,12 @@ function runQuery($query)
 <div id="demo" style="display: none;">
     <div class="container popuptext" id="myPopup">
         <div class="form-price-range-filter">
-<<<<<<< Updated upstream
-            <form id="filter-form" class="filter-form" method="POST">
-=======
             <form id="filter-form" name="search" class="filter-form" method="POST">
->>>>>>> Stashed changes
                 <div class="form-group">
                     <input type="" id="min" name="min_price" value="<?php echo $min . "€"; ?>" readonly="readonly">
                     <div id="slider-range"></div>
                     <input type="" id="max" name="max_price" value="<?php echo $max . "€"; ?>" readonly="readonly">
                 </div>
-<<<<<<< Updated upstream
-=======
 
                 <!-- aabadabdaabagqeqfeqfed -->
                 <div class="dropdownlist">
@@ -65,34 +51,15 @@ function runQuery($query)
                         ?>
                     </select>
                 </div>
->>>>>>> Stashed changes
                 <div class="form-submit">
                     <input type="submit" id="submit" class="submit" value="Filtro" />
                 </div>
             </form>
-<<<<<<< Updated upstream
-=======
             <!-- ashfoafaijfaaj -->
->>>>>>> Stashed changes
         </div>
     </div>
 </div>
 <?php
-<<<<<<< Updated upstream
-function pricerange($tabela,$faqja)
-{
-    global $min;
-    global $max;
-    $conn = new mysqli("185.67.178.114", "durajet2", "2IywPrkXgacX1BRxl0wBgvy7diQ8t01Glm+n0QqG", "durajet2_db");
-    $result1 = mysqli_query($conn, "select * from $tabela where product_price BETWEEN '$min' AND '$max'");
-    $count = mysqli_num_rows($result1);
-    if ($count > 0) {
-        while ($row = mysqli_fetch_array($result1)) {
-            component($row['product_name'], $row['product_price'], $row['product_image'], $row['id']);
-        }
-    } else {
-        echo "<div class=\"no-result\">Ska rezultate,<a id=\"mbrapa\" href=\"$faqja.php\"> KTHEHU MBRAPA <img src=\"images\kthehumbrapa.png\" width=\"50px\" height=\"50px\" style=\"vertical-align: middle;\"></a></div>";
-=======
 function pricerange($tabela, $faqja)
 {
     global $min;
@@ -133,24 +100,10 @@ function pricerange($tabela, $faqja)
         echo "<div class=\"result\" style=\"background: #ddeeff;\"><a id=\"mbrapa\" href=\"$faqja.php\"> KTHEHU NE FAQE <img src=\"images\kthehumbrapa.png\" width=\"50px\" height=\"50px\" style=\"vertical-align: middle;\"></a></div>";
     } else {
         echo "<div class=\"result\">Ska rezultate,<a id=\"mbrapa\" href=\"$faqja.php\"> KTHEHU MBRAPA <img src=\"images\kthehumbrapa.png\" width=\"50px\" height=\"50px\" style=\"vertical-align: middle;\"></a></div>";
->>>>>>> Stashed changes
     }
     mysqli_free_result($result1);
     mysqli_close($conn);
 }
-<<<<<<< Updated upstream
-?>
-
-<script>
-    function myFunction() {
-  var x = document.getElementById("demo");
-  if (x.style.display === "none") {
-    x.style.display = 'block';
-  } else {
-    x.style.display = 'none';    
-  }
-}
-=======
 
 
 ?>
@@ -165,18 +118,13 @@ function pricerange($tabela, $faqja)
             x.style.display = 'none';
         }
     }
->>>>>>> Stashed changes
 </script>
 <script type="text/javascript">
     $(function() {
         $("#slider-range").slider({
             range: true,
             min: 0,
-<<<<<<< Updated upstream
-            max: 2000,
-=======
             max: 5000,
->>>>>>> Stashed changes
             values: [<?php echo $min; ?>, <?php echo $max; ?>],
             slide: function(event, ui) {
                 $("#amount").html("$" + ui.values[0] + " - $" + ui.values[1]);
