@@ -24,7 +24,7 @@ $conn = new mysqli("185.67.178.114", "durajet2", "2IywPrkXgacX1BRxl0wBgvy7diQ8t0
         <?php
         if (isset($_POST['submit-search'])) {
             $search = mysqli_real_escape_string($conn, $_POST['search']);
-            $sql = "SELECT * FROM Productdb WHERE product_name LIKE '%$search%'";
+            $sql = "SELECT * FROM Allproducts WHERE product_name LIKE '%$search%'";
             $result = mysqli_query($conn, $sql);
             $queryResult = mysqli_num_rows($result);
             echo "<h2 id=\"rezultatet\"> There are " . $queryResult . " resulsts</h2>";
