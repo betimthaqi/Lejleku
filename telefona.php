@@ -51,6 +51,7 @@ if (isset($_POST['add'])) {
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/cart.css">
     <link rel="stylesheet" href="css/pricerange.css">
+    <link rel="stylesheet" href="css/dropdown.css">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
