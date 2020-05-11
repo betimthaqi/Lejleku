@@ -61,13 +61,13 @@ if (isset($_POST['add'])) {
 <body>
     <?php require_once("components/header.php"); ?>
     <?php require_once("components/pricerange.php");
-    pricerange("Laptopa", "laptopa"); // me zgjedh tabelen ncilen po don me ekzekutu queryn per price range
+   pricerange("Laptopa","laptopa");
     ?>
     <!-- <div id="laptopa">
         <?php
         $result = $database->getData("Laptopa");
         while ($row = mysqli_fetch_assoc($result)) {
-            component($row['product_name'], $row['product_price'], $row['product_image'], $row['id'], $row['product_ofertangjyra'], $row['product_oferta'], $row['product_category'], $row['product_description'], $row['product_earlierprice']);
+            component($row['product_name'], $row['product_price'], $row['product_image'], $row['id'], $row['product_ofertangjyra'], $row['product_oferta'],$row['product_category'],$row['product_company'],$row['product_description'], $row['product_earlierprice']);
         }
         ?>
     </div> -->
