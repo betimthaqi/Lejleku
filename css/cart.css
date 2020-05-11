@@ -46,8 +46,8 @@ text-align:center;}
 
 .search-wrapper {
     position: absolute;
-    transform: translate(-95%, -70%);
-    top: 20%;
+    transform: translate(-95%, 0%);
+    top: 13.5%;
 }
 
 .search-wrapper .input-holder {
