@@ -10,33 +10,7 @@
 }
 
 
-/*.carta{
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
-}
-.container-carta{
-  background-color: lightgrey;
-  width: 300px;
-  border: 15px solid green;
-  padding: 50px;
-  margin: 20px;
-}
 
-
-.carta{
-margin-right:30px;
-float: center;
-margin-top: 30px;
-margin-bottom: 20px;
-border: 5px solid black;
-border-radius: 0px;
-
-}
-.carta{
-	width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;
-}*/
 .total-price{
 text-align:center;
 width:30%;
@@ -46,51 +20,15 @@ margin:auto;
 border: 2px solid#d9d9d9;
 border-radius: 5px;
 background-color:white;
-
+/*POSITION FOR PRICE DETAILS*/
+position:absolute;
+  left:900px;
+  top:300px;
 }
-
 .top{
 padding:3px;
 text-align:center;}
-/*
-.container-carta{
-  width: 750px;
-  height: 423px;
- /* margin: 80px auto;*/
-  background: #FFFFFF;
-  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
-  border-radius: 6px;
- 
-  display: flex;
-  flex-direction: column;
 
-
-}/*
-.like-btn {
-position: absolute;
-  top: 9px;
-  left: 15px;
- 
-  width: 60px;
-  height: 60px;
-  background-size: 2900%;
-  background-repeat: no-repeat;
-}
-.buttons {
-  position: relative;
-  padding-top: 30px;
-  margin-right: 60px;
-}
-.remove,
-.like-btn {
-  display: inline-block;
-  Cursor: pointer;
-}
-.remove {
-  width: 18px;
-  height: 17px;
-  background: url(&quot;delete-icn.svg&quot;) no-repeat center;
-}*/
 
 #header-contact ul #cart_count {
     border-radius: 100%;
@@ -263,3 +201,93 @@ position: absolute;
     transform: translate(-40%, 0%);
 
 }
+/*une oer permasa*/
+.emri{
+	background-color:
+	border: 2px solid#d9d9d9;
+	width:10%;
+	text-align:center;
+position:static;
+	padding-top:1px;
+	padding-bottom:3px;
+	position:absolute;
+ left:250px;
+  bottom:210px;
+
+
+}	
+.bcmimi{
+	border: 2px solid#d9d9d9;
+	width:10%;
+	height:87px;
+	
+	text-align:center;
+	position:static;
+	padding-top:1px;
+	padding-bottom:3px;
+	position:absolute;
+	left:380px;
+	bottom:210px;
+	
+}
+/*NUK bon*/
+.borderifotos{
+border-style: solid;
+width:100px;
+}
+/*+ -*/
+
+.value-button {
+  display: inline-block;
+  border: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 11px 0;
+  background: #eee;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.value-button:hover {
+  cursor: pointer;
+}
+
+form #decrease {
+  margin-right: -4px;
+  border-radius: 8px 0 0 8px;
+}
+
+form #increase {
+  margin-left: -4px;
+  border-radius: 0 8px 8px 0;
+}
+
+form #input-wrap {
+  margin: 0px;
+  padding: 0px;
+}
+
+input#number {
+  text-align: center;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+

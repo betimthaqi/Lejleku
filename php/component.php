@@ -31,21 +31,31 @@ function component($productname, $productprice, $productimg, $productid)
 function cartElement($productimg,$productname,$productprice,$productid){
     $element = "
     <form action=\"cart.php?action=remove&id=$productid\" method=\"post\" class=\"car-items\">
-    <div>
-        <img src=\"$productimg\" width=\"300px\" height=\"300px\" alt=\"\">        
+    
+	<div class=\"borderifotos\">
+        <img src=\"$productimg\" width=\"200px\" height=\"200px\" alt=\"\">        
     </div>
-    <div>
-        <h5>$productname</h5>
-        <small>Seller: Lejleku Shpk</small>
+<div class=\"emri\">
+        <h5>$productname</h5><hr>
+        <small>Seller: Lejleku Shpk</small></div>
+		<div class=\"bcmimi\">
         <h5>$productprice</h5>
-        <button type=\"submit\">Save for Later</button>
-        <button type=\"submit\" name=\"remove\">Remove</button>
-    </div>
+
+       <div class=\"remove\"> <button type=\"submit\" name=\"remove\">Remove</button></div>
+</div>
     <div class=\"qmimet\">
-        <button type=\"button\">-</button>
-        <input type=\"text\" value=\"1\">
-        <button type=\"button\">+</button>
-    </div>
+	
+	
+<div class=\"ndrro\">
+<form>
+  <div class=\"value-button\" id=\"decrease\" onclick=\"decreaseValue()\" value=\"Decrease Value\">-</div>
+  <input type=\"number\" id=\"number\" value=\"0\"/>
+  <div class=\"value-button\" id=\"increase\" onclick=\"increaseValue()\" value=\"Increase Value\">+</div>
+</div>
+</div>
+    
+	</div>
+
 </form>
     ";
     echo $element;

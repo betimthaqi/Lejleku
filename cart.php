@@ -57,7 +57,9 @@ if (isset($_POST['remove'])) {
         </div>
 		</div>
 </div>
-<div>
+<div><tr>
+<div class="summary">
+
         <div class="total-price">
             <div class="top"><h3>PRICE DETAILS</h3></div>
             <hr>
@@ -65,25 +67,26 @@ if (isset($_POST['remove'])) {
             if (isset($_SESSION['cart'])) {
                 $count = count($_SESSION['cart']);
                 echo "<h5>Price ($count items) $$total</h5>";
-            } else {
+            } else  {
                 echo "<h5>Price (0 items)</h5>";
             }
             ?>
+			
             <h5>Delivery Charges</h5>
             <hr>
        
 
             <?php
             echo "<h5>Amount Payable $$total</h5>";
-            ?>
+?>
 </div>
     </div>
-
+</div>
 <?php require_once("components/footeri.php")?>
 <div class="wrapper row5">
         <footer id="copyright" class="clear">
             <p class="fl_left">Copyright &copy; 2020 - All Rights Reserved hahah- <a href="#">Grupi 7</a></p>
-            <p class="fl_right">Projekti ne <a target="_blank" href="https://github.com/durajetz/INT19_20_Gr7" title="">Github</a></p>
+            <p class="fl_right">Projekti ne <a target="_blank" href="https://github.com/durajetz/PHP" title="">Github</a></p>
         </footer>
     </div>
    

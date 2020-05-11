@@ -138,7 +138,7 @@ echo '<h1 style="text-align: center; text-shadow: 2px 2px 5px #CB9530;"> Pershen
     <div class="wrapper row5">
         <footer id="copyright" class="clear">
             <p class="fl_left">Copyright &copy; 2020 - All Rights Reserved - <a href="#">Grupi 7</a></p>
-            <p class="fl_right">Projekti ne <a target="_blank" href="https://github.com/durajetz/INT19_20_Gr7" title="">Github</a></p>
+            <p class="fl_right">Projekti ne <a target="_blank" href="https://github.com/durajetz/PHP" title="">Github</a></p>
         </footer>
     </div>
     <script>
