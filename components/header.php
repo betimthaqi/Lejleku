@@ -32,14 +32,20 @@
                         ?>
                     </a></li>
                     <li><?php
-                if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+                if((!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) && !isset($_SESSION['access_token']))
+                {
                   echo '<a href="login.php"><img id="kyqu" src="images/loginicon.png"
                   height="64" width="64"></a>';
                 }
+                else if(isset($_SESSION['access_token'])){
+                    echo '<a href="logout.php"><img src="images/logouticon.png"
+                    height="62" width="62"></a>';
+                    }
                 else{
-                  echo '<a href="login.php"><img src="images/logouticon.png"
-                  height="62" width="62"></a>';
-                }
+                    echo '<a href="login.php"><img src="images/logouticon.png"
+                    height="62" width="62"></a>';
+                    }
+
                 ?></li>
             </ul>
         </div>

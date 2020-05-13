@@ -52,7 +52,7 @@ if (isset($_POST['remove'])){
 
 <?php
     require_once ('components/header.php');
-    headeri("","","","");
+    headeri("","","","")
 ?>
 
 <div class="container-fluid">

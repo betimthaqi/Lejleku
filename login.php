@@ -1,12 +1,20 @@
 <?php
 
-session_start();
   include 'php/loginconfig.php';
+  require_once "php/configgm.php";
 
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
     header("location: welcome.php");
     exit;
 }
+
+
+if (isset($_SESSION['access_token'])) {
+header('Location: index.php');
+exit();
+}
+
+$loginURL = $gClient->createAuthUrl();
 
 
 
@@ -107,7 +115,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div id="login-box">
                 <div class="left">
-                    <h1>Sign in</h1>
+                    <h1>Login</h1>
 
                     <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                         <input type="text" name="username" value="<?php echo $username; ?>" placeholder="Username" />
@@ -122,18 +130,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     <div class="form-group">
                         <input type="submit" name="signup_submit" value="Submit" />
                         <input type="button"  value="sing up" onclick="window.location='registration.php';">
+                        <input type="button"  value="Back" onclick="window.location='index.php';" style="background: #DD4B39;">
                     </div>
                     <span id="help-block"><?php echo $username_err; ?></span>
                     <span id="help-block"><?php echo $password_err; ?></span>
                 </div>
-
                 <div class="right">
-                    <span class="loginwith">Sign in with<br />social network</span>
+                    <span class="loginwith">Login with<br />social network</span>
 
-                    <button class="social-signin facebook">Log in with facebook</button>
-                    <button class="social-signin twitter">Log in with Twitter</button>
-                    <button class="social-signin google">Log in with Google+</button>
+                    <center><img src="images/googlelogo.png" width="100" height="100"></center>
+                    <input type="button" onclick="window.location = '<?php echo $loginURL ?>';" value="Log In With Google" class="social-signin google">
                 </div>
+
                 <div class="or">OR</div>
             </div>
         </form>
