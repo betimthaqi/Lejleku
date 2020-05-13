@@ -69,14 +69,17 @@ if(isset($_POST['login']))
   }
 }
 ?>
-<?php // mesazhi ne fillim qofse je i loguar
-if(isset($_POST['login'])){
-echo '<h1 style="text-align: center; text-shadow: 2px 2px 5px #CB9530;"> Mireserdhet ne platformen tone, ';
-echo $username;
-echo '</h1>';
-}
-else {
+<!-- qetu shfaqet mesazhi qe tregon qe je logu -->
+<?php
+if((!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) && !isset($_SESSION['access_token']))
+{
 echo '<h1 style="text-align: center; text-shadow: 2px 2px 5px #CB9530;"> Pershendetje, ju lutemi te kyqeni ne platformen tone per sherbime me te avancuara </h1>';
+}
+else if(isset($_SESSION['access_token'])){
+  echo '<h1 style="text-align: center; text-shadow: 2px 2px 5px #CB9530;"> Mireserdhet ne platformen tone </h1>';
+}
+else{
+  echo '<h1 style="text-align: center; text-shadow: 2px 2px 5px #CB9530;"> Mireserdhet ne platformen tone </h1>';
 }
 ?>
     <!-- slideri -->
