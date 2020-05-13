@@ -56,7 +56,7 @@
             <ul class="clear">
                 <li class="first active"><a href="index.php">Homepage</a></li>
                 <li ><a href="laptopa.php">Laptopa</a></li>
-                <li><a href="telefon.php">Telefon</a></li>
+                <li><a href="telefona.php">Telefon</a></li>
                 <li><a href="aksesor.php">Aksesorë</a></li>
                 <li><a href="perne.php">Per ne</a></li>
                 <li><a href="cart.php">Karta</a></li>
