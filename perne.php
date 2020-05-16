@@ -15,6 +15,10 @@ require_once('./php/component.php');
     <link rel="stylesheet" href="css/cart.css">
     <link rel="stylesheet" href="css/pricerange.css">
     <link rel="icon" href="images/logo-bar.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   </head>
   <body>
       <?php require_once("components/header.php");
@@ -22,9 +26,7 @@ require_once('./php/component.php');
       ?>
 
 <div>
-  <!-- #######################################PERMBAJTJA PREJ QETUHIT################################################### -->
-  <!-- ########################################################################################## -->
-<div class="wrapper row3">
+<div>
   <div class="rrethne">
     <h1 class="chap">Rreth Lejleku</h1>
 
