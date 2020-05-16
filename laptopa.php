@@ -59,6 +59,7 @@ if (isset($_POST['add'])) {
 </head>
 
 <body>
+
     <div class="wrapper row3">
         <?php require_once("components/header.php");
         headeri("", "first active", "", "", "", "");
@@ -67,14 +68,14 @@ if (isset($_POST['add'])) {
         ?>
         <!-- <div id="laptopa">
         <?php
-        $result = $database->getData("Laptopa");
-        while ($row = mysqli_fetch_assoc($result)) {
-            component($row['product_name'], $row['product_price'], $row['product_image'], $row['id'], $row['product_ofertangjyra'], $row['product_oferta'], $row['product_category'], $row['product_company'], $row['product_description'], $row['product_earlierprice'],$result[$key]['product_category']);
-        }
+      //  $result = $database->getData("Laptopa");
+      //  while ($row = mysqli_fetch_assoc($result)) {
+      //      component($row['product_name'], $row['product_price'], $row['product_image'], $row['id'], $row['product_ofertangjyra'], $row['product_oferta'], $row['product_category'], $row['product_company'], $row['product_description'], $row['product_earlierprice'],$result[$key]['product_category']);
+      //  }
         ?>
     </div> -->
-        <?php require_once("components/footeri.php"); ?>
 
+    <?php require_once('components/footeri.php'); ?>
         <!-- Copyright -->
         <div class="wrapper row5">
             <footer id="copyright" class="clear">
