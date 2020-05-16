@@ -17,7 +17,9 @@ require_once('./php/component.php');
     <link rel="icon" href="images/logo-bar.png" type="image/x-icon">
   </head>
   <body>
-      <?php require_once("components/header.php"); ?>
+      <?php require_once("components/header.php");
+      headeri("","","","","","first active");
+      ?>
 
 <div>
   <!-- #######################################PERMBAJTJA PREJ QETUHIT################################################### -->

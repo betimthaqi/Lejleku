@@ -7,6 +7,7 @@
     margin: 0 auto;
 }
 
+
 /* body{margin:0; padding:0; font-size:12px; font-family:Georgia, "Times New Roman", Times, serif; color:#848C92; background-color:#FFFFFF;} */
 
 .clear:after {
@@ -118,8 +119,8 @@ li {
     vertical-align: baseline;
     font-size: 100%;
     font-family: 'Roboto', Arial, sans-serif;
-    background-color: #f2f2f2;
 }
+
 
 /* hyperlinqet*/
 
@@ -127,6 +128,7 @@ a {
     outline: none;
     text-decoration: none;
 }
+
 
 /* headeri */
 
@@ -293,7 +295,6 @@ a {
 }
 
 
-
 /* Menyt kryesore */
 
 #topnav {
@@ -385,149 +386,184 @@ a {
     position: static;
 }
 
-  /* Vija nalt */
-.row9{
-    border-top:5px solid #CB9530;
-  }
-.row3{
-  padding-top:1em;
-  border-top:1px solid #D5D5D5;
+
+/* Vija nalt */
+
+.row9 {
+    border-top: 5px solid #CB9530;
 }
+
+.row3 {
+    padding-top: 1em;
+    border-top: 1px solid #D5D5D5;
+}
+
 
 /*PORTOFOLIO */
+
+
 /* Sesioni par */
-.chap{
-	color: red;
-	font-size: 30px;
-	margin-left: 150px;
-	margin-top: 50px;
-	display: block;
-	width: 250px;
+
+.chap {
+    color: red;
+    font-size: 30px;
+    margin-left: 150px;
+    margin-top: 50px;
+    display: block;
+    width: 250px;
 }
 
-.par{
-	width: 250px;
-	display:block;
-	margin-left: 150px;
+.par {
+    width: 250px;
+    display: block;
+    margin-left: 150px;
 }
 
-.rrethne{
-	display: inline-block;
-	margin-bottom: 20px;
+.rrethne {
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
-.oo{
-	position:relative;
-	vertical-align: top;
+.oo {
+    position: relative;
+    vertical-align: top;
 }
 
-.row9{border-top:5px solid #CB9530;}
+.row9 {
+    border-top: 5px solid #CB9530;
+}
+
+
 /* sesioni dyt kto si tabela */
-/* Three columns side by side */
-.column {
-  float: left;
-  width: 30%;
-  margin-top: 50px;
-  margin-bottom:16px;
-  padding: 0 8px;
 
+
+/* Three columns side by side */
+
+.column {
+    float: left;
+    width: 30%;
+    margin-top: 50px;
+    margin-bottom: 16px;
+    padding: 0 8px;
 }
+
 
 /* Add some shadows to create a card effect */
+
 .card {
-  margin-left: 6.5em;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-left: 6.5em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* Some left and right padding inside the container */
-.containercard {
-  line-height: 1.5em;
-  padding: 0 16px;
-  text-align: center;
 
+/* Some left and right padding inside the container */
+
+.containercard {
+    line-height: 1.5em;
+    padding: 0 16px;
+    text-align: center;
 }
 
 .title {
-  color: grey;
+    color: grey;
 }
 
 .button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #E10A18;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #E10A18;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
 }
 
 .button:hover {
-  background-color: #CB9530;
+    background-color: #CB9530;
 }
 
-form, fieldset, legend{
-    margin:0;
-    padding:0;
-    border:none;
-  }
-legend{
-      display:none;
-  }
+form,
+fieldset,
+legend {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
 
-input, textarea, select{
-    font-size:12px;
-    font-family:Georgia,"Times New Roman",Times,serif;
-  }
+legend {
+    display: none;
+}
 
-  /* ------------------------------------------------------------------------------------------------
+input,
+textarea,
+select {
+    font-size: 12px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+
+/* ------------------------------------------------------------------------------------------------
                       KODI I SHTUAR NGA UNE
   ---------------------------------------------------------------------------------------------------*/
+
 .staff {
-  margin-bottom: 100px;
-  padding-bottom: 500px;
+    margin-bottom: 100px;
+    padding-bottom: 500px;
 }
-  /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea, input[type="email"] {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px;
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+
+
+/* Style inputs with type="text", select elements and textareas */
+
+input[type=text],
+select,
+textarea,
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 button {
-  background-color: #E10A18;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+    background-color: #E10A18;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
+
 a {
-  color: black;
+    color: black;
 }
+
 button:hover {
-  background-color: #CB9530;
-  color: black;
+    background-color: #CB9530;
+    color: black;
 }
 
 .contactform {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px 150px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px 150px;
 }
 
-#map iframe{
-height: 400px;
-width: 100%;
+#map iframe {
+    height: 400px;
+    width: 100%;
 }
+
 
 /* ----------------------------------------------Footeri------------------------------------ */
+
 .row4 {
     border-top: 9.5px solid #1f1f1f;
     border-bottom: 1px solid #D5D5D5
@@ -590,6 +626,7 @@ width: 100%;
     margin: 30px;
     display: inline-block;
 }
+
 
 /* ----------------------------------------------Copyright------------------------------------- */
 

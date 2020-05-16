@@ -8,37 +8,57 @@
 }
 
 .dropdownlist select {
+    margin: 20px 10px;
     border-radius: 20px;
-    margin: 20px;
     font-family: 'Dosis', sans-serif;
-    font-size: 14pt;
+    font-size: 16pt;
     font-weight: 800;
     border-style: none;
     color: rgb(223, 223, 223);
     letter-spacing: 3pt;
     text-transform: uppercase;
-    padding: 15px 30px;
+    padding: 15px 50px;
     background: rgba(29, 29, 29, 0.9);
     outline: none;
     cursor: pointer;
     overflow: hidden;
 }
 
+a {
+    outline: none !important;
+}
+
 .dropdownlist select option[value="RISI"]:hover {
     transform: scale(1.1);
-    background-color: yellow;
+    background-color: green;
+    color: black;
     border-radius: 20px;
 }
 
 .dropdownlist select option[value="STOCK"]:hover {
+    color: black;
     transform: scale(1.1);
     background-color: blue;
     border-radius: 20px;
 }
 
 .dropdownlist select option[value="OFERT 48H"]:hover {
+    color: black;
     transform: scale(1.1);
     background-color: red;
+    border-radius: 20px;
+}
+
+.dropdownlist select option[value="LAST"]:hover {
+    color: black;
+    transform: scale(1.1);
+    background-color: orange;
+    border-radius: 20px;
+}
+
+.dropdownlist select option:hover {
+    transform: scale(1.1);
+    background-color: black;
     border-radius: 20px;
 }
 

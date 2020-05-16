@@ -19,21 +19,30 @@ $conn = new mysqli("185.67.178.114", "durajet2", "2IywPrkXgacX1BRxl0wBgvy7diQ8t0
 </head>
 
 <body>
-    <?php require_once('./components/header.php'); ?>
+<?php require_once("components/header.php");
+        headeri("","","","","","");
+    ?>
     <div class="article-container">
         <?php
         if (isset($_POST['submit-search'])) {
             $search = mysqli_real_escape_string($conn, $_POST['search']);
-            $sql = "SELECT * FROM Allproducts WHERE product_name LIKE '%$search%'";
+            $sql = "SELECT * FROM Allproducts WHERE product_name LIKE '%$search%' ORDER BY product_price DESC";
             $result = mysqli_query($conn, $sql);
             $queryResult = mysqli_num_rows($result);
-            echo "<h2 id=\"rezultatet\"> There are " . $queryResult . " resulsts</h2>";
+
+            if(empty($search)){
+                while ($row = mysqli_fetch_assoc($result)) {
+                    component($row['product_name'], $row['product_price'], $row['product_image'], $row['id'],$row['product_ofertangjyra'],$row['product_oferta'],$row['product_category'],$row['product_company'],$row['product_description'],$row['product_earlierprice']);
+                }
+                return;
+            }
+            echo "<h2 id=\"rezultatet\"> Rezultatet e k&euml;rkimit p&euml;r: \"" . $search . "\"</h2>";
             if ($queryResult > 0) {
                 while ($row = mysqli_fetch_assoc($result)) {
-                    component($row['product_name'], $row['product_price'], $row['product_image'], $row['id']);
+                    component($row['product_name'], $row['product_price'], $row['product_image'], $row['id'],$row['product_ofertangjyra'],$row['product_oferta'],$row['product_category'],$row['product_company'],$row['product_description'],$row['product_earlierprice']);
                 }
             } else
-                echo "There are no resulsts";
+            echo "<div class=\"result\" style=\"background: #ddeeff; text-align:center;\"><a id=\"mbrapa\" href=\"index.php\"> KTHEHU NE FILLIM <img src=\"images\kthehumbrapa.png\" width=\"50px\" height=\"50px\" style=\"vertical-align: middle;\"></a></div>";
         }
         ?>
     </div>

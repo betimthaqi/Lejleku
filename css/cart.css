@@ -1,35 +1,3 @@
-
-#header-contact ul #cart_count {
-    border-radius: 100%;
-    font-size: 12px;
-    background: #CB9530;
-    color: #fff;
-    padding: 0 5px;
-    vertical-align: top;
-    font-size: 18px;
-}
-
-
-
-.total-price{
-text-align:center;
-width:30%;
-float: center;
-margin-top: 30px;
-margin:auto;
-border: 2px solid#d9d9d9;
-border-radius: 5px;
-background-color:white;
-/*POSITION FOR PRICE DETAILS*/
-position:absolute;
-  left:900px;
-  top:300px;
-}
-.top{
-padding:3px;
-text-align:center;}
-
-
 #header-contact ul #cart_count {
     border-radius: 100%;
     font-size: 12px;
@@ -199,95 +167,35 @@ text-align:center;}
 
 #kyqu {
     transform: translate(-40%, 0%);
-
-}
-/*une oer permasa*/
-.emri{
-	background-color:
-	border: 2px solid#d9d9d9;
-	width:10%;
-	text-align:center;
-position:static;
-	padding-top:1px;
-	padding-bottom:3px;
-	position:absolute;
- left:250px;
-  bottom:210px;
-
-
-}	
-.bcmimi{
-	border: 2px solid#d9d9d9;
-	width:10%;
-	height:87px;
-	
-	text-align:center;
-	position:static;
-	padding-top:1px;
-	padding-bottom:3px;
-	position:absolute;
-	left:380px;
-	bottom:210px;
-	
-}
-/*NUK bon*/
-.borderifotos{
-border-style: solid;
-width:100px;
-}
-/*+ -*/
-
-.value-button {
-  display: inline-block;
-  border: 1px solid #ddd;
-  margin: 0px;
-  width: 40px;
-  height: 20px;
-  text-align: center;
-  vertical-align: middle;
-  padding: 11px 0;
-  background: #eee;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
-.value-button:hover {
-  cursor: pointer;
+#rezultatet {
+    text-transform: uppercase;
+    margin-top: 16px;
+    font-family: "Open Sans", Arial, Verdana;
+    font-size: 25px;
+    color: #CB9530;
 }
 
-form #decrease {
-  margin-right: -4px;
-  border-radius: 8px 0 0 8px;
+#emriproduktit1 {
+    color: #212129;
+    font-size: 30px;
 }
 
-form #increase {
-  margin-left: -4px;
-  border-radius: 0 8px 8px 0;
+.cmimiperfundimtar {
+    color: #212129;
+    font-size: 17px;
 }
 
-form #input-wrap {
-  margin: 0px;
-  padding: 0px;
+@font-face {
+    font-family: 'Beckman Free';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Beckman Free'), url('Beckman-Free.woff') format('woff');
 }
 
-input#number {
-  text-align: center;
-  border: none;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  margin: 0px;
-  width: 40px;
-  height: 40px;
+#kartaime {
+    font-size: 35px;
+    color: #CB9530;
+    font-family: 'Beckman';
 }
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-

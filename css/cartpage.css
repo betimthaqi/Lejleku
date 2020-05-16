@@ -3,7 +3,8 @@ img {
 }
 
 a {
-    outline: none;
+    outline: none !important;
+    text-decoration: none !important;
 }
 
 .fa-star,

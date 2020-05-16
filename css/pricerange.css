@@ -1,7 +1,6 @@
 /* =-========================================= */
 
 .btn-submit {
-    margin-top: 20px;
     padding: 10px 20px;
     background: #FFF;
     border: #aaa 1px solid;
@@ -26,9 +25,9 @@
     padding: 5px 12px;
 }
 
-.no-result {
-    padding: 20px;
+.result {
     background: #ffdddd;
+    padding: 20px;
     text-align: center;
     border-top: #d2aeb0 1px solid;
     color: #6f6e6e;
@@ -64,8 +63,7 @@ list-type-ulli {
 .container {
     width: 660px;
     background: rgba(29, 29, 29, 0.9);
-    margin: 20px auto;
-    border-radius: 10px;
+    margin: 10px auto;
 }
 
 .filter-form {
@@ -79,7 +77,7 @@ input {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
-    padding: 13px 50px;
+    padding: 5px 20px;
     font-size: 16px;
     color: rgb(223, 223, 223);
     display: block;
@@ -89,16 +87,16 @@ input {
 }
 
 .submit {
-    background: #f8ba0f;
+    background: #CB9530;
+    font-size: 20px;
     color: #fff;
-    font-size: 14px;
-    margin-top: 23px;
+    font-size: px;
     padding: 15px 20px;
     cursor: pointer;
 }
 
 .submit:hover {
-    background-color: #ce9906;
+    background-color: rgb(179, 129, 37);
 }
 
 .form-group {

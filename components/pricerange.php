@@ -54,7 +54,7 @@ function filtro($tabela)
         }
     }
     echo "</select>
-</div>;
+</div>
                 <div class=\"dropdownlist\">
                     <select id=\"Place\" name=\"product_company[]\" multiple=\"multiple\">";
     if (!empty($product_companyResult)) {
