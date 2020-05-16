@@ -60,9 +60,9 @@ if (isset($_POST['add'])) {
 
 <body>
     <?php require_once("components/header.php");
-        headeri("","","","first active","","");
+        headeri("","","","four active","","");
     ?>
-    <?php require_once("components/pricerange.php"); 
+    <?php require_once("components/pricerange.php");
        pricerange("Aksesor","aksesor");
     ?>
     <!-- <div id="laptopa">

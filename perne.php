@@ -18,7 +18,7 @@ require_once('./php/component.php');
   </head>
   <body>
       <?php require_once("components/header.php");
-      headeri("","","","","","first active");
+      headeri("","","","","","six active");
       ?>
 
 <div>

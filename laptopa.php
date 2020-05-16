@@ -62,7 +62,7 @@ if (isset($_POST['add'])) {
 
     <div class="wrapper row3">
         <?php require_once("components/header.php");
-        headeri("", "first active", "", "", "", "");
+        headeri("", "second active", "", "", "", "");
         require_once("components/pricerange.php");
         pricerange("Laptopa", "laptopa");
         ?>
