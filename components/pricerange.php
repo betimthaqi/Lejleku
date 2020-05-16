@@ -2,7 +2,7 @@
 require_once('./php/component.php');
 $conn = new mysqli("185.67.178.114", "durajet2", "2IywPrkXgacX1BRxl0wBgvy7diQ8t01Glm+n0QqG", "durajet2_db");
 
-$min = 100;
+$min = 10;
 $max = 5000;
 
 if (!empty($_POST['min_price'])) {
