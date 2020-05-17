@@ -24,9 +24,9 @@
                     <h2 class="title">Stay Social</h2>
                     <nav>
                         <ul>
-                            <li><img src="images/social/linkedin.png" alt=""><a href="https://www.linkedin.com/" target="_blank>LinkedIn</a></li>
-                            <li><img src="images/social/twitter.png" alt=""><a href="https://twitter.com/"target="_blank>Twitter</a></li>
-                            <li><img src="images/social/pinterest.png" alt=""><a href="https://www.pinterest.com/"target="_blank>Pinterest</a></li>
+                            <li><img src="images/social/linkedin.png" alt=""><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+                            <li><img src="images/social/twitter.png" alt=""><a href="https://twitter.com/"target="_blank">Twitter</a></li>
+                            <li><img src="images/social/pinterest.png" alt=""><a href="https://www.pinterest.com/"target="_blank">Pinterest</a></li>
                             <li><img src="images/social/rss.png" alt=""><a href="#">RSS Feed</a></li>
                         </ul>
                     </nav>
