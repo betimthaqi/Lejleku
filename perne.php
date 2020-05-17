@@ -125,7 +125,7 @@ Kur nuk krijoni gjëra, ju bëheni më të përcaktuar nga shijet tuaja sesa nga
     <!-- Copyright -->
     <div class="wrapper row5">
         <footer id="copyright" class="clear">
-            <p class="fl_left">Copyright &copy; 2020 - All Rights Reserved - <a href="#">Grupi 33</a></p>
+            <p class="fl_left">Copyright &copy; 2020 - All Rights Reserved - <a href="#">Grupi 32</a></p>
             <p class="fl_right">Projekti ne <a target="_blank" href="https://github.com/durajetz/PHP" title="">Github</a></p>
         </footer>
     </div>

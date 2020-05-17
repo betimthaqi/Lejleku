@@ -178,7 +178,7 @@ if (isset($_POST['remove'])){
                           <?php
 
                           if((!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) && !isset($_SESSION['access_token'])){
-                            echo "<a href=\"http://www.lejleku-ks.live/login.php\"><div class=\"container-6\" id=\"ch\">
+                            echo "<a href=\"login.php\"><div class=\"container-6\" id=\"ch\">
                                 <div class=\"btn btn-six\">
                                 <span>Checkout</span>
                                 </div></a>
@@ -223,7 +223,7 @@ if (isset($_POST['remove'])){
 ?>
 <div class="wrapper row5">
         <footer id="copyright" class="clear">
-            <p class="fl_left">Copyright &copy; 2020 - All Rights Reserved - <a href="#">Grupi 7</a></p>
+            <p class="fl_left">Copyright &copy; 2020 - All Rights Reserved - <a href="#">Grupi 32</a></p>
             <p class="fl_right">Projekti ne <a target="_blank" href="https://github.com/durajetz/PHP" title="">Github</a></p>
         </footer>
     </div>
