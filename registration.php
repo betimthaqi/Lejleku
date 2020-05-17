@@ -96,6 +96,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <title>Regjistrimi</title>
+    <link rel="icon" href="images/logo-bar.png" type="image/x-icon">
     <link rel="stylesheet" href="css/stylelogin.css">
     <style type="text/css">
         body {
