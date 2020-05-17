@@ -34,10 +34,10 @@
                 <!-- / Section -->
                 <section>
                     <h2 class="title"> Partner</h2>
-                    <a href="https://www.apple.com/" target="_blank><img id="sponzoret" class="flex-container items" src="https://www.freepnglogos.com/uploads/apple-logo-png/apple-logo-png-dallas-shootings-don-add-are-speech-zones-used-4.png" alt=""></a>
-                    <a href="https://www.samsung.com/us/"target="_blank><img id="sponzoret" class="flex-container items" src="https://logos-download.com/wp-content/uploads/2016/02/Samsung_logo.png" alt=""></a>
-                    <a href="https://steelseries.com/"target="_blank><img id="sponzoret" class="flex-container items" src="https://upload.wikimedia.org/wikipedia/en/7/7f/Steelseries-logo.png" alt=""></a>
-                    <a href="https://www.lenovo.com/us/en/"target="_blank><img id="sponzoret" class="flex-container items" src="https://upload.wikimedia.org/wikipedia/commons/0/03/Lenovo_Global_Corporate_Logo.png" alt=""></a>
+                    <a href="https://www.apple.com/" target="_blank"><img id="sponzoret" class="flex-container items" src="https://www.freepnglogos.com/uploads/apple-logo-png/apple-logo-png-dallas-shootings-don-add-are-speech-zones-used-4.png" alt=""></a>
+                    <a href="https://www.samsung.com/us/"target="_blank"><img id="sponzoret" class="flex-container items" src="https://logos-download.com/wp-content/uploads/2016/02/Samsung_logo.png" alt=""></a>
+                    <a href="https://steelseries.com/"target="_blank"><img id="sponzoret" class="flex-container items" src="https://upload.wikimedia.org/wikipedia/en/7/7f/Steelseries-logo.png" alt=""></a>
+                    <a href="https://www.lenovo.com/us/en/"target="_blank"><img id="sponzoret" class="flex-container items" src="https://upload.wikimedia.org/wikipedia/commons/0/03/Lenovo_Global_Corporate_Logo.png" alt=""></a>
 
 
                 </section>
