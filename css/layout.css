@@ -158,7 +158,7 @@ a {
 }
 
 #header #hgroup h1 a {
-    font-family: 'Beckman';
+    font-family: 'Beckman Free';
     font-style: normal;
     font-weight: normal;
     src: local('./fonts/Beckman Free'), url('Beckman-Free.woff') format('woff');

@@ -44,6 +44,73 @@ if (isset($_POST['remove'])){
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/cart.css">
 
+
+    <style>
+    @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+/*
+ FORMATTING FOR CODEPEN
+*/
+
+
+/*
+ BUTTON STYLING
+*/
+
+#ch .btn {
+  position: relative;
+  color: white;
+  width: 150px;
+  padding: 10px;
+  margin: 20px;
+  background: rgb(100,108,108);
+  background: linear-gradient(0deg, rgba(100,108,108,1) 0%, rgba(38,37,35,1) 100%);
+  transition: all 0.3s;
+  span {
+    transition: all 0.3s;
+    tranform: scale(1, 1);
+  }
+}
+
+.btn::before, .btn::after {
+  content: '';
+  position: absolute;
+  color: white;
+  transition: all 0.3s;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+
+/* BTN SIX */
+.btn-six::before {
+
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.3, 1.3);
+}
+
+.btn-six:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+.btn-six::after {
+  color: white;
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-six:hover::after {
+  color: white;
+  transform: scale(0, 0);
+  opacity: 1;
+}
+
+    </style>
 </head>
 <body>
 
@@ -107,45 +174,43 @@ if (isset($_POST['remove'])){
                         <h6 class="cmimiperfundimtar">€<?php
                             echo $total;
                             ?></h6>
-                          <!-- ############################################### Paypal #################################
-                                test: sb-kyhpr1793693@personal.example.com
-                                |iD9}=PU
-                        -->
-                            <!-- Set up a container element for the button -->
-                               <div id="paypal-button-container"></div>
 
-                               <!-- Include the PayPal JavaScript SDK -->
-                               <script src="https://www.paypal.com/sdk/js?client-id=ARLsMoeQH3Hi965jEqNX_mZwG5Mlk_SvWM2Z0hgHx-_pP24LljKlAhJJOoAObkzdTzsGV95oRIrULIMO&currency=EUR"></script>
+                          <?php
 
-                               <script>
-                                   // Render the PayPal button into #paypal-button-container
-                                   paypal.Buttons({
-
-                                       // Set up the transaction
-                                       createOrder: function(data, actions) {
-                                           return actions.order.create({
-                                               purchase_units: [{
-                                                   amount: {
-                                                       value: '<?php
-                                                           echo $total;
-                                                           ?>'
-                                                   }
-                                               }]
-                                           });
-                                       },
-
-                                       // Finalize the transaction
-                                       onApprove: function(data, actions) {
-                                           return actions.order.capture().then(function(details) {
-                                               // Show a success message to the buyer
-                                               alert('Transaction completed by ' + details.payer.name.given_name + '!');
-                                           });
+                          if((!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) && !isset($_SESSION['access_token'])){
+                            echo "<a href=\"http://www.lejleku-ks.live/login.php\"><div class=\"container-6\" id=\"ch\">
+                                <div class=\"btn btn-six\">
+                                <span>Checkout</span>
+                                </div></a>
+                                ";
+                          }
+                          else{
+                                    //############################################### Paypal #################################
+                                          //test: sb-kyhpr1793693@personal.example.com
+                                          //|iD9}=PU
+                                      echo   "<div id=\"paypal-button-container\"></div>
+                                         <script type=\"text/javascript\"src=\"https://www.paypal.com/sdk/js?client-id=ARLsMoeQH3Hi965jEqNX_mZwG5Mlk_SvWM2Z0hgHx-_pP24LljKlAhJJOoAObkzdTzsGV95oRIrULIMO&currency=EUR\"></script>
+                                         <script type=\"text/javascript\">
+                                             paypal.Buttons({
+                                                 createOrder: function(data, actions) {
+                                                     return actions.order.create({
+                                                         purchase_units: [{
+                                                             amount: {
+                                                                 value: '$total'
+                                                            }
+                                                         }]
+                                                     });
+                                                 },
+                                                 onApprove: function(data, actions) {
+                                                     return actions.order.capture().then(function(details) {
+                                                         alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                                                     });
+                                                 }
+                                             }).render('#paypal-button-container');
+                                         </script>";
                                        }
+                                ?>
 
-
-                                   }).render('#paypal-button-container');
-
-                               </script>
                     </div>
                 </div>
             </div>

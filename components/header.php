@@ -4,7 +4,7 @@ function headeri($homepage,$laptopa,$telefona,$aksesor,$karta,$perne){
     <header id=\"header\" class=\"clear\">
         <div id=\"hgroup\">
             <a href=\"index.php\"><img id=\"logo\" src=\"\" alt=\"\"></a>
-            <h1><a href=\"index.php\">Lejleku</a></h1>
+            <h1 style=\"font-family: 'Beckman', Arial, sans-serif;\"><a href=\"index.php\">Lejleku</a></h1>
             <h2>gaming online shop by gamers</h2>
         </div>
         <div id=\"header-contact\">

@@ -142,11 +142,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
 
                 <div class="right">
-                    <span class="loginwith">Sign in with<br />social network</span>
+                    <span class="loginwith">Login with<br />social network</span>
 
-                    <button class="social-signin facebook">Log in with facebook</button>
-                    <button class="social-signin twitter">Log in with Twitter</button>
-                    <button class="social-signin google">Log in with Google+</button>
+                    <center><img src="images/googlelogo.png" width="100" height="100"></center>
+                    <input type="button" onclick="window.location = '<?php echo $loginURL ?>';" value="Log In With Google" class="social-signin google">
                 </div>
                 <div class="or">OR</div>
             </div>
