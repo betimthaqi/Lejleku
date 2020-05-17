@@ -11,7 +11,7 @@ Supports:
 
 Lejleku e-commerce ([Live Preview](http://www.lejleku-ks.live/)) © 2020 
 
-<small>not totally finished ...</small>
+<small>not full version ...</small>
 
 
 
