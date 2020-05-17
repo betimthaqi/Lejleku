@@ -30,7 +30,7 @@ if (isset($_POST['remove'])){
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cart</title>
-
+    <link rel="icon" href="images/logo-bar.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/layout.css">
