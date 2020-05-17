@@ -5,6 +5,6 @@
 	$gClient->setClientId("519884771442-23u1ddmc3labjbis0ttlceptp32paaq1.apps.googleusercontent.com");
 	$gClient->setClientSecret("CZrGOe28jwV1WvjGDxiKwEeg");
 	$gClient->setApplicationName("Lejleku");
-	$gClient->setRedirectUri("http://localhost/wwww/Projektiphp/g-callbackgm.php");
+	$gClient->setRedirectUri("http://www.lejleku-ks.live");
 	$gClient->addScope("https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/userinfo.email");
 ?>

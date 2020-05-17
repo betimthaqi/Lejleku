@@ -36,7 +36,7 @@ function headeri($homepage,$laptopa,$telefona,$aksesor,$karta,$perne){
                           height="64" width="64"></a>';
                         }
                         else if(isset($_SESSION['access_token'])){
-                            echo '<a href="logout.php"><img src="images/logouticon.png"
+                            echo '<a href="logoutgm.php"><img src="images/logouticon.png"
                             height="62" width="62"></a>';
                             }
                         else{
