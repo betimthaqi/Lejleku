@@ -11,7 +11,8 @@ $conn = new mysqli("185.67.178.114", "durajet2", "2IywPrkXgacX1BRxl0wBgvy7diQ8t0
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shoppin cart</title>
+    <title>Search</title>
+    <link rel="icon" href="images/logo-bar.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/cart.css">
     <link rel="stylesheet" href="css/layout.css">
