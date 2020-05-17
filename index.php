@@ -36,7 +36,7 @@ $database = new CreateDb();
         });
     </script>
     <title>Lejleku</title>
-    <link rel="icon" href="images/slider/logo-bar.png" type="image/x-icon">
+    <link rel="icon" href="images/logo-bar.png" type="image/x-icon">
 </head>
 
 <body>
