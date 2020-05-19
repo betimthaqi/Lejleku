@@ -11,6 +11,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (empty(trim($_POST["username"]))) {
         $username_err = "Ju lutem shenoni nje perdorues valid. <br>";
+    } else if (!preg_match('/^[A-Za-z][A-Za-z0-9]{5,31}$/', $username)) {
+        $username_err = "Username juaj nuk eshte valid.";
     } else {
 
         $sql = "SELECT username FROM logintest WHERE username = ?";
